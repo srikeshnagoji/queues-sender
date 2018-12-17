@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: srikeshnagoji
+Build-Jdk: 11.0.1
+Implementation-Title: SpringBootActiveMQ
+Implementation-Version: 0.0.1
+Implementation-Vendor-Id: com.grokonez.activemq
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/SpringBootActiveMQ
+Created-By: Maven Integration for Eclipse
+
