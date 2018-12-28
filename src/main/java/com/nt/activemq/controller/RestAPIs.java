@@ -3,6 +3,7 @@ package com.nt.activemq.controller;
 import java.util.List;
 
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +21,7 @@ public class RestAPIs {
 	@Autowired
 	JmsProducer jmsProducer;
 	
+	
 	@Autowired
 	private MessageStorage customerStorage;
 	
@@ -29,11 +31,11 @@ public class RestAPIs {
 		return customer;
 	}
 	
-	@GetMapping(value="/api/customers")//RECEIVING
-	public List<Customer> getAll(){
-		List<Customer> customers = customerStorage.getAll();
-		return customers;
-	}
+//	@GetMapping(value="/api/customers")//RECEIVING
+//	public List<Customer> getAll(){
+//		List<Customer> customers = customerStorage.getAll();
+//		return customers;
+//	}
 	
 	@DeleteMapping(value="/api/customers/clear")
 	public String clearCustomerStorage() {

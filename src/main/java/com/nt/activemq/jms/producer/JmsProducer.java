@@ -1,5 +1,7 @@
 package com.nt.activemq.jms.producer;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -19,5 +21,11 @@ public class JmsProducer {
 	public void send(Customer customer){
 		System.out.println("SENT Message: " + customer);
 		jmsTemplate.convertAndSend(queue, customer);
+	}
+	
+	//here
+	public void send(List list){
+		System.out.println("SENT Message: " + list);
+		jmsTemplate.convertAndSend(queue, list);
 	}
 }
